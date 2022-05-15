@@ -1,0 +1,18 @@
+header {
+    flex-direction: row;
+    place-content: center;
+    gap:40px;
+    height: 215px;
+}
+header img {
+    margin-bottom: 0px;
+}
+header .header__title {
+    align-self: center;
+}
+.profile-buttons-container .button {
+    width: 230px;
+}
+.profile-facts {
+    max-width: 630px;
+}
