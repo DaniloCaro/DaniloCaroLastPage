@@ -13,7 +13,7 @@
     --grey-dark: #A3ABB2;
     --grey-light: #F1F2F4;
     --grey-font: #575757;
-    --yellow-opaque: #FFE071;
+    --yellow-opaque: #FBD144;
 }
 * {
     box-sizing: border-box;
@@ -43,57 +43,6 @@ header {
     margin: 96px 0 30px 0;
     text-align: center;
 }
-/* dark mode */
-header .mode {
-    position: absolute;
-    top: -76px;
-    left: calc(50% - 35px);
-}
-input[type=checkbox] {
-    height: 0;
-    width: 0;
-    visibility: hidden;
-}
-label {
-    cursor: pointer;
-    text-indent: -9999px;
-    width: 70px;
-    height: 35px;
-    background-color: var(--blue-light);
-    display: block;
-    border-radius: 100px;
-    position: relative;
-}
-label:after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 25px;
-    height: 25px;
-    background-color: var(--grey-light);
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 4px 0 rgba(0, 0, 0, .08);
-    border-radius: 30px;
-    transition: 0.3s;
-}
-input:checked+label {
-    background-color: var(--grey-dark);
-}
-input:checked+label:after {
-    left: calc(100% - 5px);
-    transform: translateX(-100%);
-}
-label:active:after {
-    width: 80px;
-}
-.dark-mode {
-    background-color: var(--grey-bg);
-    color: var(--grey-font);
-}
-.dark-mode__title {
-    color: #3d3d3d;
-}
-/* dark mode */
 header img {
     width: 124px;
     height: 124px;
@@ -173,7 +122,7 @@ main {
     gap: 20px;
     margin: 0 auto 30px auto;
 }
-.profile-buttons-container .button {
+.button {
     width: 130px;
     height: 44px;
     margin: 0 auto;
@@ -185,7 +134,7 @@ main {
     border-radius:8px;
     cursor: pointer;
 }
-.profile-buttons-container .button--blue {
+.button--blue {
     background-color: var(--blue-light);
     color: var(--grey-dark);
 }
@@ -212,7 +161,7 @@ main {
     background-color: var(--blue-light);
     border-radius: 8px;
 }
-.briefcase-skills__buttons button {
+.buttons__b-s {
     width: 49%;
     height: 54px;
     display: inline-block;
@@ -223,8 +172,11 @@ main {
     color: var(--grey-dark);
     cursor: pointer;
 }
-.briefcase-skills__buttons .briefcase {
+.briefcase {
     background-color: var(--blue-dark);
+}
+.skills {
+    background-color: transparent;
 }
 .cards-container{
     margin-bottom: 50px;
@@ -242,7 +194,6 @@ main {
 .cards-grid a .card {
     width: 280px;
     height: 150px;
-    max-height:auto;
     max-width: 362px;
     border-radius: 8px;
 }
@@ -255,3 +206,62 @@ footer p {
     text-align: center;
     margin-bottom: 20px;
 }
+/* dark mode */
+header .mode {
+    position: absolute;
+    top: -76px;
+    left: calc(50% - 35px);
+}
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 70px;
+    height: 35px;
+    background-color: var(--blue-light);
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--grey-light);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 4px 0 rgba(0, 0, 0, .08);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+input:checked+label {
+    background-color: var(--grey-dark);
+}
+input:checked+label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+label:active:after {
+    width: 80px;
+}
+.dark-mode {
+    background-color: var(--grey-bg);
+    color: var(--grey-font);
+}
+.dark-mode__title {
+    color: #3d3d3d;
+}
+.bg--white {
+    background-color: #ffffff;
+    color: #3d3d3d;
+}
+.bg--grey {
+    background-color: #d7d7d7;
+    color: #3d3d3d;
+}
+/* dark mode */
