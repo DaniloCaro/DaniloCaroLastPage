@@ -50,12 +50,21 @@ header img {
     margin-bottom: 38px;
     border-radius: 50%;
     border: 4px solid var(--yellow-opaque);
-}
 /* Animation */
+    animation: fadeIn--Right 1s cubic-bezier(.39, -1.05, 0.58, 1.95);
+    animation-delay: -0.2s;
+    transform-origin: center ;
+}
 h1 {
     font-size: 3.2rem;
     font-weight: 500;
     color: var(--grey-light);
+}
+.header__title {
+    /* Animation */
+    animation: fadeIn--Left 1s cubic-bezier(.39, -1.05, 0.58, 1.95);
+    animation-delay: -0.2s;
+    transform-origin: center ;
 }
 .header__title h2 {
     font-size: 1.4rem;
@@ -105,6 +114,10 @@ main {
     padding: 20px 0;
     text-align: center;
     gap: 20px;
+/* Animation */
+    animation: fadeIn--Bottom 1s cubic-bezier(.39, -1.05, 0.58, 1.95);
+    animation-delay: -0.2s;
+    transform-origin: center ;
 }
 .profile-facts .profile-facts__grid span {
     font-size: 1.6rem;
@@ -122,6 +135,10 @@ main {
     justify-content: center;
     gap: 20px;
     margin: 0 auto 30px auto;
+    /* Animation */
+    animation: fadeIn--Bottom 2s cubic-bezier(.39, -1.05, 0.58, 1.95);
+    animation-delay: -0.2s;
+    transform-origin: center ;
 }
 .button {
     width: 130px;
@@ -154,6 +171,10 @@ main {
     height: 84px;
     padding: 10px 0;
     margin: 0 auto 30px auto;
+    /* Animation */
+    animation: fadeIn--Right 2s cubic-bezier(.39, -1.05, 0.58, 1.95);
+    animation-delay: -0.2s;
+    transform-origin: center ;
 }
 .briefcase-skills__buttons {
     width: 100%;
@@ -190,6 +211,10 @@ main {
     margin:0 auto;
     justify-content: center;
     gap: 30px; 
+    /* Animation */
+    animation: fadeIn--Right 2s cubic-bezier(.39, -1.05, 0.58, 1.95);
+    animation-delay: -0.2s;
+    transform-origin: center ;
 } 
 .cards-grid a {
     justify-self: center;
@@ -202,6 +227,10 @@ main {
 footer {
     width: 100%;
     height: auto;
+    /* Animation */
+    animation: fadeIn--Bottom 2s cubic-bezier(.39, -1.05, 0.58, 1.95);
+    animation-delay: -0.2s;
+    transform-origin: center ;
 }
 footer p {
     font-size: 1.4rem;
@@ -267,3 +296,32 @@ label:active:after {
     color: #3d3d3d;
 }
 /* dark mode */
+/* Animaciones */
+@keyframes fadeIn--Right {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn--Bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn--Left {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* Animaciones */
