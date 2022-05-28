@@ -24,7 +24,7 @@ header .header__title {
 .profile-facts {
     max-width: 630px;
 }
-.cards-grid a .card {
+.card-mold {
     width: 362px;
     height: 204px;
 }
