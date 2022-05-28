@@ -227,23 +227,23 @@ main {
     height: 100%;
 
 }
-.card-mold:hover .details {
-    opacity: 1;
+@media (hover:hover) {
+    .card-mold:hover .details{
     height: 100%;
+    }
 }
 .details {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 0%;
+    height: 50%;
     background: rgba(0, 0, 0, 0.9);
     display: flex;
     flex-direction: column;
     place-content: center;
     text-align: center;
     padding: 10px 10px;
-    opacity: 0;
     transition: 0.5s ease;
 }
 footer {
