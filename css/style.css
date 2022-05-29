@@ -190,20 +190,19 @@ main {
     font-size: 1.4rem;
     border: none;
     border-radius: 8px;
-    background-color: var(--blue-light);
+    background-color: transparent;
     color: var(--grey-dark);
     cursor: pointer;
 }
-.briefcase {
-    background-color: var(--blue-dark);
-}
-.skills {
-    background-color: transparent;
+.activate {
+    background-color: #d7d7d7;
+    color: #3d3d3d;
+    transition: 0.3s ease;
 }
 .cards-box {
     width: 100%;
     max-width: 757px;
-    display:grid;
+    display:none;
     grid-template-columns: repeat(auto-fill, minmax(280px, 362px));
     margin:0 auto 30px auto;
     justify-content: center;
@@ -213,6 +212,9 @@ main {
     animation: fadeIn--Right 2s cubic-bezier(.39, -1.05, 0.58, 1.95);
     animation-delay: -0.2s;
     transform-origin: center ;
+}
+.activate-content {
+    display:grid;
 }
 .card-mold {
     width: 280px;
@@ -225,7 +227,6 @@ main {
 .card-mold img {
     width: 100%;
     height: 100%;
-
 }
 @media (hover:hover) {
     .card-mold:hover .details{
