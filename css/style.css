@@ -213,6 +213,22 @@ main {
     animation-delay: -0.2s;
     transform-origin: center ;
 }
+.skills-box{
+    width: 100%;
+    height:auto;
+    max-width: 757px;
+    display:none;
+    margin:0 auto 30px auto;
+    text-align: justify;
+    padding:0 20px;
+    /* Animation */
+    animation: fadeIn--Left 2s cubic-bezier(.39, -1.05, 0.58, 1.95);
+    animation-delay: -0.2s;
+    transform-origin: center ;
+}
+.skills-box p {
+    font-size: 1.4rem;
+}
 .activate-content {
     display:grid;
 }

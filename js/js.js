@@ -32,11 +32,11 @@ const changeOption = () => {
     )
     choise == 2 ? (
         option2.classList.value = 'buttons__b-s activate' ,
-        content2.classList.value = 'cards-box activate-content'
+        content2.classList.value = 'skills-box activate-content'
     )
     : (
         option2.classList.value = 'buttons__b-s' ,
-        content2.classList.value = 'cards-box'
+        content2.classList.value = 'skills-box'
     )
 }
 
