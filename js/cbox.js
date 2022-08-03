@@ -121,14 +121,7 @@ const container = document.getElementById('content1');
             desc:'CRUD sobre datos de tarjetas de credito sin uso de Database.',
             skill:'Bootstrap, HTML, CSS, TypeScript, Angular.',
             link:'https://creditcards-angular.netlify.app/'
-        },
-        // { 
-        //     img:'',
-        //     title:'', 
-        //     desc:'',
-        //     skill:'',
-        //     link:''
-        // },
+        }
     ]
     let view = `
     ${arrayBox.map(item => `
@@ -138,7 +131,7 @@ const container = document.getElementById('content1');
         <div class="details">
             <h3>${item.title}</h3>
             <p>${item.desc}
-                <br>${item.skill}}
+                <br>${item.skill}
             </p>
         </div>
         </a>
