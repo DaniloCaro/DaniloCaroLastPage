@@ -74,9 +74,17 @@ const container = document.getElementById('content1');
 (()=> {
     const arrayBox = [
         { 
+            img:'./assets/img/CRUD-Estudiante.webp',
+            title:'Consumo de API Estudiantes', 
+            desc:'CRUD sobre datos basicos de estudiantes.',
+            skill:'Bootstrap, HTML, CSS, TypeScript, Angular, NodeJS',
+            link:'https://seminario-crud.netlify.app/'
+        },
+        { 
             img:'./assets/img/Cosmos.webp',
             title:'Cosmos', 
-            desc:'Aplicación web para la recepción sistemática de información requerida en matriculas académicas.', skill:'CSS, HTML, JavaScript, Docker,Python (Flask), PostgreSql, Sql (SqlAlchademy).', 
+            desc:'Aplicación web para la recepción sistemática de información requerida en matriculas académicas.', 
+            skill:'CSS, HTML, JavaScript, Docker,Python (Flask), PostgreSql, Sql (SqlAlchademy).', 
             link:'https://github.com/Roarco/Proyecto-grado' 
         },
         { 
